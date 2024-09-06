@@ -9,6 +9,6 @@ returns the sum. I added the ability for the user to play again if they want to.
 
 ### Peer Review:
 
-**Name**:
+**Name**: Andrew Sayasing
 
-**Comments**:
+**Comments**: Looks great. Just like Bronel's nice loops to and stuff to make the program run without problems
