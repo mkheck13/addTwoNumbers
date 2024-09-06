@@ -1,7 +1,7 @@
 # Add Two Numbers
 
 **Description**: Create a console project that prompts the user to enter two numbers. The console then adds the two numbers and 
-returns the sum.
+returns the sum. I added the ability for the user to play again if they want to.
 
 **Name**: Michael Heckerman
 
