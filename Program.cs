@@ -32,16 +32,30 @@ while(playAgain){
     int sum = num1 + num2;
     Console.Clear();
     Console.WriteLine($"So {num1} plus {num2} equals {sum}");
-    Console.WriteLine("Would you like to try again?");
-    Console.WriteLine("Type yes to try again or hit any key to exit");
-    string? userInput = Console.ReadLine();
-    userInput = userInput?.ToLower();
 
-    if(userInput == "yes"){
-        Console.WriteLine("Let's GOOOOOOOO!!!");
-    }else{
-        playAgain = false;
-        Console.WriteLine("Maybe next time.");
+    Console.WriteLine("Would you like to play again?");
+    Console.WriteLine("Type 'yes' to play again or 'no' to exit");
+
+    bool yesNo = true;
+
+    while (yesNo == true)
+    {
+        string userPlay = Console.ReadLine()!.Trim().ToLower();
+        if (userPlay == "yes" || userPlay == "y")
+        {
+            Console.WriteLine("Let's go again!");
+            yesNo = false;
+        }
+        else if (userPlay == "no" || userPlay == "n")
+        {
+            Console.WriteLine("See you next time.");
+            yesNo = false;
+            playAgain = false;
+        }
+        else
+        {
+            Console.Clear();
+            Console.WriteLine("That was not a yes or no. Try again.");
+        }
     }
-
 }
